@@ -1,0 +1,9 @@
+[Unit]
+Description=DateMon
+
+[Service]
+ExecStart=/usr/sbin/datemon --reboot --exec "systemctl stop ntp; ntpdate pool.ntp.org; systemctl start ntp"
+
+[Install]
+WantedBy=default.target
+
