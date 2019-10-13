@@ -1,0 +1,15 @@
+default:
+  image: rust:slim-buster
+
+stages:
+  - test
+  - build
+
+test:
+  stage: build
+  script: cargo test
+
+build:
+  stage: build
+  script: cargo build --release
+
