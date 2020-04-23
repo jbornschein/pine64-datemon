@@ -1,7 +1,7 @@
 //extern crate stderrlog;
 
 use chrono::{DateTime, Local, SecondsFormat};
-use log::{trace};
+use log::trace;
 use std::process::Command;
 use std::thread;
 use std::time::{Duration, SystemTime};
@@ -26,7 +26,7 @@ struct Opt {
     #[structopt(short = "e", long = "exec")]
     exec: Option<String>,
 
-    /// exec_timeout 
+    /// exec_timeout
     #[structopt(long = "exec-timeout", default_value = "300")]
     exec_timeout: f32,
 
