@@ -1,5 +1,3 @@
-//extern crate stderrlog;
-
 use chrono::{DateTime, Local, SecondsFormat};
 use log::trace;
 use std::process::Command;
