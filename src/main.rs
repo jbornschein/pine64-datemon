@@ -35,7 +35,7 @@ struct Opt {
     #[structopt(short = "r", long = "reboot")]
     reboot: bool,
 
-    /// Dry rnu
+    /// Dry run
     #[structopt(long = "dry-run")]
     dry_run: bool,
 }
