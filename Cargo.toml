@@ -9,3 +9,10 @@ chrono = "0.4.9"
 structopt = "0.2.10"
 stderrlog = "0.4.1"
 log = "0.4"
+
+[profile.release]
+opt-level = 3
+lto = true
+debug = false
+codegen-units = 1
+panic = "abort"
