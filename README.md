@@ -2,7 +2,7 @@
 datemon 
 =======
 
-Small too to monitor the system date and initiate reboot if it jumps too far ahead. This is a workaround
+A small tool to monitor the system date and initiate a reboot if it jumps too far ahead. This is a workaround
 for problems on some ARM SOC, in particular for Pine64 borads which apperantly have problems properly 
 counting seconds
 
