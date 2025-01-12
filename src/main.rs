@@ -12,7 +12,7 @@ use structopt::StructOpt;
 #[derive(Debug, StructOpt)]
 #[structopt(
     name = "datemon",
-    about = "Monitor systemdate and trigger reaction if it jumps too far ahead."
+    about = "Monitor system date and trigger reaction if it jumps too far ahead."
 )]
 struct Opt {
     /// Verbose mode (-v, -vv, -vvv, etc)

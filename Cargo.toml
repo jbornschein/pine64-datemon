@@ -2,6 +2,8 @@
 name = "datemon"
 version = "0.1.0"
 authors = ["Jorg Bornschein <jb@capsec.org>"]
+description = "Monitor system date and trigger reaction if it jumps too far ahead."
+license = "MIT"
 edition = "2018"
 
 [dependencies]
@@ -10,9 +12,6 @@ structopt = "0.2"
 stderrlog = "0.4"
 log = "0.4"
 
-[profile.release]
-opt-level = 3
-lto = true
-debug = false
-codegen-units = 1
-panic = "abort"
+[package.metadata.deb]
+maintainer-scripts = "debian/"
+systemd-units = { enable = false }
