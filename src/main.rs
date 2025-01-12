@@ -34,10 +34,6 @@ struct Opt {
     /// reboot
     #[structopt(short = "r", long = "reboot")]
     reboot: bool,
-
-    /// Dry run
-    #[structopt(long = "dry-run")]
-    dry_run: bool,
 }
 
 fn execute(cmd: &str) {
